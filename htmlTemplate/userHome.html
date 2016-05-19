@@ -10,7 +10,7 @@
   <meta name="author" content="">
   <link rel="icon" href="./assets/favicon.ico">
 
-  <title>Jumbotron Template for Bootstrap</title>
+  <title>User Home</title>
 
 
 
@@ -38,6 +38,7 @@
 
 <body>
 
+  <!-- navbar -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -57,7 +58,7 @@
           <div class="form-group">
             <input type="password" placeholder="Password" class="form-control">
           </div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary">Join!</button>
         </form>
       </div>
       <!--/.navbar-collapse -->
@@ -65,18 +66,71 @@
   </nav>
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron demo-1" style="padding-top: 0px; padding-bottom: 0px;">
-    <div class="container large-header" id="large-header">
-      <canvas id="demo-canvas"></canvas>
-      <h1 class="main-title" style="color:white;">Bounty Board</h1>
-    </div>
-  </div>
-
   <div class="container">
-    <!-- Example row of columns -->
 
+    <div class="header">
+      <h1>
+        Bem vindo $USUÁRIO!
+      </h1>
+      <hr>
+    </div>
+
+
+
+    <form>
+      <h1>Registre sua ocorrencia</h1>
+      <div class="form-group">
+        <label for="valbounty">Valor da bounty</label>
+        <input type="number" class="form-control" id="valbounty" placeholder="0">
+      </div>
+      <div class="form-group">
+        <label for="facname">Nome da Facção</label>
+        <input type="text" class="form-control" id="facname" placeholder="Alioth independents">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    
+    
+    <!-- table de sistemas procurados -->
     <table class="table table-hover table-condensed">
-      <caption>Optional table caption.</caption>
+      <caption>Suas bountys, e sistemas em que estás sendo procurado.</caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Sistema</th>
+          <th>Facção</th>
+          <th>Bounty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Sol</td>
+          <td>Mother Gaia</td>
+          <td>34.563.234 Cr</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Sol</td>
+          <td>Sol Workers' Party</td>
+          <td>105.543.234 Cr</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Ensoreus</td>
+          <td>Ensoreus Family</td>
+          <td>83.754.346 Cr</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <hr>
+    
+
+
+    <!-- Global bounty board -->
+    <table class="table table-hover table-condensed">
+      <caption>Top 3.</caption>
       <thead>
         <tr>
           <th>#</th>
@@ -111,7 +165,7 @@
 
     <footer>
       <hr>
-      <p>&copy; 2015 Company, Inc.</p>
+      <p>&copy; 2016 Company, Inc.</p>
     </footer>
   </div>
   <!-- /container -->
